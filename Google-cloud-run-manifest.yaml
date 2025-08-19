@@ -12,7 +12,7 @@ spec:
   template:
     spec:
       containers:
-        - image: ganesh6498/deploy1
+        - image: ganesh6498/deploy1:latest
           ports:
             - containerPort: 80
 
