@@ -4,7 +4,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: service99
+  name: service100
   annotations:
     run.googleapis.com/ingress: "all"           # Allows traffic from internet
     run.googleapis.com/allow-unauthenticated: "true"  # Disables IAM requirement
