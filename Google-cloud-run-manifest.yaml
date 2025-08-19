@@ -5,11 +5,14 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: service99
+  annotations:
+    run.googleapis.com/ingress: "all"           # Allows traffic from internet
+    run.googleapis.com/allow-unauthenticated: "true"  # Disables IAM requirement
 spec:
   template:
     spec:
       containers:
-        - image: ganesh6498/deploy3
+        - image: ganesh6498/pyweb1:6
           ports:
-            - containerPort: 80
+            - containerPort: 5000
 
