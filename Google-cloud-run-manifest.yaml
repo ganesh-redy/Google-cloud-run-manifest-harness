@@ -12,7 +12,7 @@ spec:
   template:
     spec:
       containers:
-        - image: ganesh6498/pyweb1:6
+        - image: ganesh6498/deploy1
           ports:
-            - containerPort: 5000
+            - containerPort: 80
 
